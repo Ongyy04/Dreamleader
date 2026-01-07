@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1440" />
+  <title>Dream_Leader</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    body { margin:0; background:#000; }
+
+    .frame{
+      position: relative;
+      width: 100%;
+      max-width: 1440px;
+      height: 7440px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .item{
+      position:absolute;
+    }
+    .item img{
+      width:100%;
+      height:100%;
+      display:block;
+    }
+
+    /* === Scroll reveal base === */
+    .reveal{
+      opacity: 0;
+      transition: opacity 900ms ease, transform 900ms cubic-bezier(.2,.8,.2,1);
+      will-change: opacity, transform;
+      pointer-events: auto;
+    }
+    .reveal.up{
+      transform: translate3d(0, 60px, 0);
+    }
+    .reveal.from-right{
+      transform: translate3d(80px, 0, 0);
+    }
+    .reveal.from-left{
+      transform: translate3d(-80px, 0, 0);
+    }
+    .reveal.is-visible{
+      opacity: 1;
+      transform: translate3d(0,0,0);
+    }
+
+    .link{ cursor:pointer; }
+
+    @media (prefers-reduced-motion: reduce){
+      .reveal{
+        transition: none;
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="frame">
+
+    <!-- background (배경은 고정: 애니메이션 X) -->
+    <div class="item" style="left:0%; top:0%; width:100%; height:115.457%;">
+      <img src="0.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:2.572%; top:0.660%; width:94.070%; height:5.946%;">
+      <img src="1.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:3.835%; top:5.276%; width:87.167%; height:7.204%;">
+      <img src="2.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:7.022%; top:12.945%; width:57.778%; height:5.214%;">
+      <img src="3.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:7.022%; top:17.873%; width:27.491%; height:1.658%;">
+      <img src="4.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:7.075%; top:20.260%; width:27.778%; height:5.739%;">
+      <img src="5.png" alt="">
+    </div>
+
+    <!-- 6: 옆에서 튀어나오기 (오른쪽에서) -->
+    <div class="item reveal from-right" style="left:38.560%; top:18.723%; width:57.833%; height:6.750%;">
+      <img src="6.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:6.837%; top:26.862%; width:29.583%; height:6.237%;">
+      <img src="7.png" alt="">
+    </div>
+
+    <!-- 8.png 없음 -->
+
+    <!-- 9: 옆에서 튀어나오기 (오른쪽에서) -->
+    <div class="item reveal from-right" style="left:38.047%; top:26.236%; width:57.529%; height:7.370%;">
+      <img src="9.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:7.075%; top:33.842%; width:33.958%; height:0.874%;">
+      <img src="10.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:7.462%; top:35.000%; width:79.734%; height:2.604%;">
+      <img src="11.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:7.462%; top:38.175%; width:80.487%; height:2.604%;">
+      <img src="12.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:7.462%; top:41.350%; width:81.553%; height:2.604%;">
+      <img src="13.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:6.837%; top:44.880%; width:38.125%; height:0.874%;">
+      <img src="14.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:6.837%; top:46.067%; width:59.097%; height:0.870%;">
+      <img src="15.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:6.837%; top:46.504%; width:87.214%; height:5.845%;">
+      <img src="16.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:-0.156%; top:52.911%; width:100.156%; height:5.225%;">
+      <img src="17.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:0%; top:58.056%; width:100.156%; height:5.589%;">
+      <img src="18.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:6.837%; top:64.055%; width:74.550%; height:6.499%;">
+      <img src="19.png" alt="">
+    </div>
+
+    <!-- 20: 옆에서 튀어나오기 (오른쪽에서) -->
+    <div class="item reveal from-right" style="left:52.406%; top:63.644%; width:43.228%; height:6.910%;">
+      <img src="20.png" alt="">
+    </div>
+
+    <div class="item reveal up" style="left:6.837%; top:72.175%; width:59.097%; height:0.870%;">
+      <img src="21.png" alt="">
+    </div>
+
+    <!-- 22: 왼쪽에서 튀어나오기 (x가 음수라 더 자연스럽게) -->
+    <div class="item reveal from-left" style="left:-4.750%; top:73.519%; width:74.526%; height:9.375%;">
+      <img src="22.png" alt="">
+    </div>
+
+    <!-- 23: 오른쪽에서 튀어나오기 -->
+    <div class="item reveal from-right" style="left:59.519%; top:73.534%; width:37.433%; height:8.791%;">
+      <img src="23.png" alt="">
+    </div>
+
+    <!-- 링크(24) : 위로 올라오며 등장 -->
+    <a
+      href="https://ongyy04.github.io/seekoo_/"
+      target="_blank"
+      class="item reveal up link"
+      style="left:56.505%; top:82.894%; width:39.585%; height:1.338%;"
+    >
+      <img src="24.png" alt="">
+    </a>
+
+    <div class="item reveal up" style="left:-1.458%; top:84.659%; width:101.458%; height:10.022%;">
+      <img src="25.png" alt="">
+    </div>
+
+  </div>
+
+  <script>
+    const targets = document.querySelectorAll('.reveal');
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: "0px 0px -10% 0px"
+    });
+
+    targets.forEach(t => io.observe(t));
+  </script>
+</body>
+</html>
